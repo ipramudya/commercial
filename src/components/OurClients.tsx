@@ -1,0 +1,21 @@
+import { PartnersImg } from "@/static/partners";
+import Image from "next/image";
+
+export function OurClients() {
+    return (
+        <div className="flex min-h-[200px] w-full items-center justify-center bg-slate-50 px-[1rem] py-[1rem] md:p-[2rem]">
+            <div className="flex w-full max-w-screen-xl flex-col items-center space-y-[1rem]">
+                <p className="text-xl font-medium text-neutral-700">
+                    Our <span className="font-bold">Clients</span>
+                </p>
+                <div className="flex flex-col items-center justify-center md:flex-row md:space-x-[3rem]">
+                    {PartnersImg.map((img) => (
+                        <div key={`partners-${img.id}`} className="size-[120px]">
+                            <Image src={img.src} alt="partner-logo" className="h-auto w-full" />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}

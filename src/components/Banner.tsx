@@ -1,29 +1,27 @@
 "use client";
 
-import { Hero1, Hero2, Hero3 } from "@/assets";
-import { ChevLeft, ChevRight } from "@/components/Icon";
+import { ChevLeftIcon, ChevRightIcon } from "@/components/Icon";
+import { CarouselImages } from "@/static/carousels";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-
-const CarouselImages = [
-    { id: 1, src: Hero1 },
-    { id: 2, src: Hero2 },
-    { id: 3, src: Hero3 },
-];
 
 export function Banner() {
     const [emblaRef, emblaAPI] = useEmblaCarousel();
 
     return (
-        <div className="relative flex h-[calc(100dvh-140px-200px)] w-full items-center justify-center overflow-hidden">
-            <div className="z-[1]" ref={emblaRef}>
-                <div className="flex">
+        <div className="relative flex h-[calc(80dvh-100px)] w-full items-center justify-center overflow-hidden lg:h-[calc(100dvh-120px)]">
+            <div className="z-[1] h-full" ref={emblaRef}>
+                <div className="flex h-full">
                     {CarouselImages.map((image) => (
                         <div
                             key={`carousel-image-${image.id}`}
                             className="min-w-0 flex-shrink-0 flex-grow-0 basis-full"
                         >
-                            <Image src={image.src} alt="hero-banner" />
+                            <Image
+                                src={image.src}
+                                alt="hero-banner"
+                                className="h-full w-full object-cover"
+                            />
                         </div>
                     ))}
                 </div>
@@ -33,29 +31,29 @@ export function Banner() {
                 <div className="relative flex h-full items-center justify-center">
                     <button
                         type="button"
-                        className="absolute left-[5%] top-1/2 -translate-y-1/2"
+                        className="absolute left-2 top-1/2 -translate-y-1/2 md:left-[2%]"
                         onClick={() => {
                             if (emblaAPI) emblaAPI.scrollPrev();
                         }}
                     >
-                        <ChevLeft width={38} height={38} className="stroke-white" />
+                        <ChevLeftIcon width={38} height={38} className="stroke-white" />
                     </button>
 
-                    <div className="flex w-full max-w-screen-xl flex-col space-y-4 text-white">
-                        <h2 className="text-5xl font-bold">
+                    <div className="flex w-full max-w-screen-lg flex-col space-y-2 px-[3rem] text-white md:px-[5rem] xl:max-w-screen-xl xl:space-y-4 2xl:px-0">
+                        <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">
                             Memenuhi setiap <br /> sudut rumah anda.
                         </h2>
-                        <p className="text-lg font-semibold">Lihat lebih lanjut</p>
+                        <p className="font-semibold lg:text-lg">Lihat lebih lanjut</p>
                     </div>
 
                     <button
                         type="button"
-                        className="absolute right-[5%] top-1/2 -translate-y-1/2"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 md:right-[2%]"
                         onClick={() => {
                             if (emblaAPI) emblaAPI.scrollNext();
                         }}
                     >
-                        <ChevRight width={38} height={38} className="stroke-white" />
+                        <ChevRightIcon width={38} height={38} className="stroke-white" />
                     </button>
                 </div>
             </div>
