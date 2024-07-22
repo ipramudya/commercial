@@ -1,10 +1,11 @@
-import { Hero, WideLogo } from "@/assets";
+import { WideLogo } from "@/assets";
 import Image from "next/image";
+import { Banner } from "./Banner";
 import { PartnersImg } from "./partners";
 
 export default function Home() {
     return (
-        <section className="flex min-h-[100dvh] w-full flex-col overflow-hidden">
+        <section className="flex min-h-[100dvh] w-full flex-col">
             <nav className="flex items-center justify-center bg-white">
                 <div className="flex h-[140px] w-full max-w-screen-xl items-center justify-between">
                     <div className="relative">
@@ -27,22 +28,14 @@ export default function Home() {
                 </div>
             </nav>
 
-            <div className="relative flex h-[calc(100dvh-140px-200px)] w-full items-center justify-center bg-yellow-200">
-                <div className="absolute left-0 top-0 z-[1] h-full w-full">
-                    <Image src={Hero} alt="hero-banner" fill />
-                </div>
-                <div className="relative z-10 flex h-full w-full max-w-screen-xl flex-col justify-center space-y-4 text-white">
-                    <h2 className="text-5xl font-bold">
-                        Memenuhi setiap <br /> sudut rumah anda.
-                    </h2>
-                    <p className="text-lg font-semibold">Lihat lebih lanjut</p>
-                </div>
-            </div>
+            <Banner />
 
-            <div className="flex h-[200px] w-full items-center justify-center">
-                <div className="flex w-full max-w-screen-xl items-center justify-between">
-                    <p className="font-semibold">Our Partner</p>
-                    <div className="flex items-center space-x-[3rem]">
+            <div className="flex min-h-[200px] w-full items-center justify-center bg-slate-50 py-[2rem]">
+                <div className="flex w-full max-w-screen-xl flex-col items-center space-y-[1rem]">
+                    <p className="text-xl font-medium text-neutral-700">
+                        Our <span className="font-bold">Clients</span>
+                    </p>
+                    <div className="flex items-center justify-center space-x-[3rem]">
                         {PartnersImg.map((img) => (
                             <Image
                                 key={`partners-${img.id}`}
@@ -55,6 +48,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className="min-h-screen" />
         </section>
     );
 }
