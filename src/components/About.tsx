@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section className="my-[3rem] flex flex-col px-6 xl:mx-auto xl:my-[6rem] xl:w-full xl:max-w-screen-xl xl:p-0">
+        <section className="flex flex-col px-6 py-[3rem] xl:mx-auto xl:w-full xl:max-w-screen-xl xl:p-0 xl:py-[6rem]">
             <div className="grid grid-cols-1 gap-[3rem] md:grid-cols-2">
-                <div className="flex flex-col space-y-6 xl:space-y-[3rem]">
+                <div className="flex flex-col items-center justify-center space-y-6 xl:space-y-[3rem]">
                     <div className="relative w-[300px]">
                         <Image
                             src={WideLogo}
@@ -16,7 +16,7 @@ export default function About() {
                         />
                     </div>
 
-                    <p className="max-w-[380px] text-sm leading-normal text-neutral-700">
+                    <p className="max-w-[500px] text-sm leading-normal text-neutral-700 lg:max-w-[380px]">
                         <strong>{WeenIndokraftTeks}</strong> {WeenIndokraftMeaningTeks}
                     </p>
                 </div>

@@ -1,8 +1,11 @@
 import About from "@/components/About";
-import { Banner } from "@/components/Banner";
-import { Nav } from "@/components/Nav";
-import { OurClients } from "@/components/OurClients";
+import Banner from "@/components/Banner";
+import ContactUs from "@/components/ContactUs";
+import Materials from "@/components/Materials";
+import Nav from "@/components/Nav";
+import OurClients from "@/components/OurClients";
 import Services from "@/components/Services";
+import Works from "@/components/Works";
 
 export default function Home() {
     return (
@@ -16,6 +19,12 @@ export default function Home() {
             <About />
 
             <Services />
+
+            <Materials />
+
+            <Works />
+
+            <ContactUs />
         </section>
     );
 }

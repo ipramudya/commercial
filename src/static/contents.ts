@@ -6,5 +6,5 @@ export const SupplyTeks =
 export const CustomTeks =
     "Ween Indokraft adalah perusahaan supplier furnitur yang telah berdiri sejak tahun 2024. Perusahaan ini telah berpengalaman dalam menyediakan berbagai jenis produk furnitur.";
 export const OfficeTeks = "Jl. Bintaro Raya nomor 8C Kebayoran Lama, Jakarta Selatan DKI Jakarta";
-export const WorkshopTeks = "Jl. Kapuk Pulo Kav.115 Jakarta Barat, DKI Jakarta";
-export const WhatsappTeks = "+6281918881686";
+export const WorkshopTeks = "Jl. Kapuk Pulo Raya Kav.115 Jakarta Barat, DKI Jakarta";
+export const WhatsappTeks = "+62819 1888 1686";

@@ -5,7 +5,7 @@ import { CarouselImages } from "@/static/carousels";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-export function Banner() {
+export default function Banner() {
     const [emblaRef, emblaAPI] = useEmblaCarousel();
 
     return (
@@ -39,11 +39,11 @@ export function Banner() {
                         <ChevLeftIcon width={38} height={38} className="stroke-white" />
                     </button>
 
-                    <div className="flex w-full max-w-screen-lg flex-col space-y-2 px-[3rem] text-white md:px-[5rem] xl:max-w-screen-xl xl:space-y-4 2xl:px-0">
-                        <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+                    <div className="flex w-full max-w-screen-lg flex-col space-y-2 px-[3rem] md:px-[5rem] xl:max-w-screen-xl xl:space-y-4 2xl:px-0">
+                        <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
                             Memenuhi setiap <br /> sudut rumah anda.
                         </h2>
-                        <p className="font-semibold lg:text-lg">Lihat lebih lanjut</p>
+                        <p className="font-semibold text-white lg:text-lg">Lihat lebih lanjut</p>
                     </div>
 
                     <button

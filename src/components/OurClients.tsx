@@ -1,7 +1,7 @@
 import { PartnersImg } from "@/static/partners";
 import Image from "next/image";
 
-export function OurClients() {
+export default function OurClients() {
     return (
         <section className="flex min-h-[200px] w-full items-center justify-center bg-slate-50 px-6 py-[3rem] md:p-[2rem]">
             <div className="flex w-full max-w-screen-xl flex-col items-center space-y-[1rem]">
