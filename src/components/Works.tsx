@@ -29,7 +29,7 @@ export default function Works() {
             <div className="relative mt-[3rem]">
                 <div ref={emblaRef} className="overflow-hidden">
                     <div className="flex">
-                        {Array.from({ length: 5 }).map((_, index) => (
+                        {Array.from({ length: 8 }).map((_, index) => (
                             <div
                                 key={"works-" + index}
                                 className={cn(

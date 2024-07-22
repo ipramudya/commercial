@@ -7,7 +7,7 @@ import ContactUsForm from "./ContactUsForm";
 
 export default function ContactUs() {
     return (
-        <section className="flex flex-col px-6 py-[3rem] lg:items-center">
+        <section className="flex flex-col px-6 py-[3rem] lg:items-center xl:py-[6rem]">
             <p className="w-full text-center text-xl font-medium text-neutral-700">
                 <span className="font-bold">Contact</span> Us
             </p>
