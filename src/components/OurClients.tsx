@@ -8,9 +8,9 @@ export function OurClients() {
                 <p className="text-xl font-medium text-neutral-700">
                     Our <span className="font-bold">Clients</span>
                 </p>
-                <div className="flex flex-col items-center justify-center md:flex-row md:space-x-[3rem]">
+                <div className="grid grid-cols-2 sm:flex sm:flex-row sm:items-center sm:justify-center sm:space-x-[3rem]">
                     {PartnersImg.map((img) => (
-                        <div key={`partners-${img.id}`} className="size-[120px]">
+                        <div key={`partners-${img.id}`} className="size-[120px] md:size-[140px]">
                             <Image src={img.src} alt="partner-logo" className="h-auto w-full" />
                         </div>
                     ))}
