@@ -9,3 +9,13 @@ export { default as SamplePartnerPic4 } from "./ourpartnersample-04.png";
 export { default as Hero2 } from "./alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg";
 export { default as Hero1 } from "./deborah-cortelazzi-gREquCUXQLI-unsplash.jpg";
 export { default as Hero3 } from "./toa-heftiba-FV3GConVSss-unsplash.jpg";
+
+export { default as MaterialIconImg } from "./materials.png";
+export { default as WorksIconImg } from "./works.png";
+
+export { default as CustomImg } from "./custom.png";
+export { default as SupplyImg } from "./supply.png";
+
+export { default as OfficeIconImg } from "./office.png";
+export { default as WhatsappIconImg } from "./wa.png";
+export { default as WorkshopIconImg } from "./workshop.png";
