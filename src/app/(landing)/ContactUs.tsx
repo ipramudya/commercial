@@ -1,11 +1,15 @@
 "use client";
 
 import { OfficeIconImg, WhatsappIconImg, WorkshopIconImg } from "@/assets/images";
-import { OfficeTeks, WhatsappTeks, WorkshopTeks } from "@/static/contents";
+import { OfficeTeks, WhatsappNumTeks, WhatsappTeks, WorkshopTeks } from "@/static/contents";
 import Image from "next/image";
 import ContactUsForm from "./ContactUsForm";
 
 export default function ContactUs() {
+    const openWhatsapp = () => {
+        window.open(`https://wa.me/${WhatsappNumTeks}`, "_blank")?.focus();
+    };
+
     return (
         <section className="flex flex-col px-6 py-[3rem] lg:items-center xl:py-[6rem]">
             <p className="w-full text-center text-xl font-medium text-neutral-700">
@@ -67,7 +71,11 @@ export default function ContactUs() {
                                     Whatsapp
                                 </p>
                             </div>
-                            <div className="flex min-h-[42px] items-center justify-center rounded-3xl bg-neutral-100 p-6">
+                            <div
+                                className="flex min-h-[42px] items-center justify-center rounded-3xl bg-neutral-100 p-6 transition-all hover:bg-neutral-200/50"
+                                role="button"
+                                onClick={openWhatsapp}
+                            >
                                 <p className="font-semibold">{WhatsappTeks}</p>
                             </div>
                         </div>

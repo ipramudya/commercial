@@ -8,3 +8,4 @@ export const CustomTeks =
 export const OfficeTeks = "Jl. Bintaro Raya nomor 8C Kebayoran Lama, Jakarta Selatan DKI Jakarta";
 export const WorkshopTeks = "Jl. Kapuk Pulo Raya Kav.115 Jakarta Barat, DKI Jakarta";
 export const WhatsappTeks = "+62819 1888 1686";
+export const WhatsappNumTeks = "6281918881686";
