@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function OurClients() {
     return (
-        <section className="flex min-h-[200px] w-full items-center justify-center bg-slate-50 px-6 py-[3rem] md:p-[2rem]">
+        <section className="flex min-h-[200px] w-full items-center justify-center py-[3rem] xl:py-[6rem]">
             <div className="flex w-full max-w-screen-xl flex-col items-center space-y-[1rem]">
-                <p className="text-xl font-medium text-neutral-700">
+                <p className="w-full text-center text-xl font-medium text-neutral-700">
                     Our <span className="font-bold">Clients</span>
                 </p>
                 <div className="grid grid-cols-2 sm:flex sm:flex-row sm:items-center sm:justify-center sm:space-x-[3rem]">

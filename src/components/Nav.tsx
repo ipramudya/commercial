@@ -1,6 +1,7 @@
 import { WideLogo } from "@/assets/images";
 import { LinksData } from "@/static/links";
 import Image from "next/image";
+import Link from "next/link";
 import { HamburgerMenu } from "./HamburgerMenu";
 
 export default function Nav() {
@@ -20,7 +21,9 @@ export default function Nav() {
                 <ul className="hidden items-center space-x-[3rem] lg:flex">
                     {LinksData.map((link) => (
                         <li key={`link-${link.id}`} className="text-neutral-700">
-                            {link.name}
+                            <Link prefetch href={link.path}>
+                                {link.name}
+                            </Link>
                         </li>
                     ))}
                 </ul>
