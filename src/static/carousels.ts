@@ -1,4 +1,4 @@
-import { Hero1, Hero2, Hero3 } from "@/assets";
+import { Hero1, Hero2, Hero3 } from "@/assets/images";
 
 export const CarouselImages = [
     { id: 1, src: Hero1 },

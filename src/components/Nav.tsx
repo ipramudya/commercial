@@ -1,4 +1,4 @@
-import { WideLogo } from "@/assets";
+import { WideLogo } from "@/assets/images";
 import { LinksData } from "@/static/links";
 import Image from "next/image";
 import { HamburgerMenu } from "./HamburgerMenu";

@@ -1,6 +1,6 @@
 "use client";
 
-import { CompatLogo } from "@/assets";
+import { CompatLogo } from "@/assets/images";
 import { cn } from "@/functions/cn";
 import { LinksData } from "@/static/links";
 import Image from "next/image";

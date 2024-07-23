@@ -1,6 +1,6 @@
 "use client";
 
-import { OfficeIconImg, WhatsappIconImg, WorkshopIconImg } from "@/assets";
+import { OfficeIconImg, WhatsappIconImg, WorkshopIconImg } from "@/assets/images";
 import { OfficeTeks, WhatsappTeks, WorkshopTeks } from "@/static/contents";
 import Image from "next/image";
 import ContactUsForm from "./ContactUsForm";

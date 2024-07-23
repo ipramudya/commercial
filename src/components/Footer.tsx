@@ -1,4 +1,4 @@
-import { CompatLogo } from "@/assets";
+import { CompatLogo } from "@/assets/images";
 import { OfficeTeks, WorkshopTeks } from "@/static/contents";
 import Image from "next/image";
 

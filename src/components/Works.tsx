@@ -1,6 +1,6 @@
 "use client";
 
-import { WorksIconImg } from "@/assets";
+import { WorksIconImg } from "@/assets/images";
 import { cn } from "@/functions/cn";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";

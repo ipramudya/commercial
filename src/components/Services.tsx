@@ -1,4 +1,4 @@
-import { CustomImg, SupplyImg } from "@/assets";
+import { CustomImg, SupplyImg } from "@/assets/images";
 import { CustomTeks, SupplyTeks } from "@/static/contents";
 import Image from "next/image";
 

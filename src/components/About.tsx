@@ -1,4 +1,4 @@
-import { Hero2, WideLogo } from "@/assets";
+import { Hero2, WideLogo } from "@/assets/images";
 import { WeenIndokraftMeaningTeks, WeenIndokraftTeks } from "@/static/contents";
 import Image from "next/image";
 

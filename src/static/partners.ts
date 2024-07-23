@@ -3,7 +3,7 @@ import {
     SamplePartnerPic2,
     SamplePartnerPic3,
     SamplePartnerPic4,
-} from "@/assets";
+} from "@/assets/images";
 
 export const PartnersImg = [
     { id: 1, src: SamplePartnerPic1 },

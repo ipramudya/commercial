@@ -1,4 +1,4 @@
-import { MaterialIconImg } from "@/assets";
+import { MaterialIconImg } from "@/assets/images";
 import Image from "next/image";
 
 export default function Materials() {
