@@ -1,13 +1,12 @@
 import CenterContentsBanner from "@/components/CenterContentsBanner";
 import { Fragment } from "react";
-import OurWorks from "./OurWorks";
+import Products from "./Products";
 
 export default function Page() {
     return (
         <Fragment>
-            <CenterContentsBanner title="Projects" description="Our latest projects" />
-
-            <OurWorks />
+            <CenterContentsBanner title="Products" description="We will provide your needs" />
+            <Products />
         </Fragment>
     );
 }
