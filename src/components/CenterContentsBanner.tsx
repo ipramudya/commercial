@@ -15,6 +15,8 @@ export default function CenterContentsBanner({ title, description }: Props) {
 
     return (
         <div className="relative h-[calc(80dvh-100px)] w-full overflow-hidden lg:h-[calc(100dvh-120px)]">
+            <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/30" />
+
             <div className="z-[1] h-full" ref={emblaRef}>
                 <div className="flex h-full">
                     {CarouselImages.map((image) => (
@@ -36,7 +38,7 @@ export default function CenterContentsBanner({ title, description }: Props) {
 
             <button
                 type="button"
-                className="absolute left-2 top-1/2 -translate-y-1/2 md:left-[2%]"
+                className="absolute left-2 top-1/2 z-10 -translate-y-1/2 md:left-[2%]"
                 onClick={() => {
                     if (emblaAPI) emblaAPI.scrollPrev();
                 }}
@@ -44,7 +46,7 @@ export default function CenterContentsBanner({ title, description }: Props) {
                 <ChevLeftIcon width={38} height={38} className="stroke-white" />
             </button>
 
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
                 <div className="flex flex-col items-center justify-center space-y-3">
                     <h2 className="text-center text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
                         Our <br />
@@ -58,7 +60,7 @@ export default function CenterContentsBanner({ title, description }: Props) {
 
             <button
                 type="button"
-                className="absolute right-2 top-1/2 -translate-y-1/2 md:right-[2%]"
+                className="absolute right-2 top-1/2 z-10 -translate-y-1/2 md:right-[2%]"
                 onClick={() => {
                     if (emblaAPI) emblaAPI.scrollNext();
                 }}

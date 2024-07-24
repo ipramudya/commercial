@@ -10,6 +10,8 @@ export default function Banner() {
 
     return (
         <div className="relative flex h-[calc(80dvh-100px)] w-full items-center justify-center overflow-hidden lg:h-[calc(100dvh-120px)]">
+            <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/30" />
+
             <div className="z-[1] h-full" ref={emblaRef}>
                 <div className="flex h-full">
                     {CarouselImages.map((image) => (
@@ -28,7 +30,7 @@ export default function Banner() {
             </div>
 
             <div className="absolute left-0 top-0 z-10 h-full w-full">
-                <div className="relative flex h-full items-center justify-center">
+                <div className="relative z-10 flex h-full items-center justify-center">
                     <button
                         type="button"
                         className="absolute left-2 top-1/2 -translate-y-1/2 md:left-[2%]"

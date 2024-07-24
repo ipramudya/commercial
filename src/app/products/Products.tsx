@@ -1,6 +1,5 @@
-import { CustomImg } from "@/assets/images";
 import { ArrowLeftIcon, ArrowRightIcon } from "@/components/Icon";
-import Image from "next/image";
+import ProductItem from "./ProductItem";
 
 export default function Products() {
     return (
@@ -8,12 +7,7 @@ export default function Products() {
             <div className="mt-[3rem] xl:flex xl:items-center xl:justify-center">
                 <div className="grid grid-cols-2 gap-[3rem] md:grid-cols-3 lg:grid-cols-4 xl:w-full xl:max-w-screen-xl">
                     {Array.from({ length: 5 }).map((_, index) => (
-                        <div key={`material-${index}`} className="flex flex-col space-y-3">
-                            <div className="aspect-square w-full overflow-hidden rounded-2xl">
-                                <Image src={CustomImg} alt="products" className="h-auto w-full" />
-                            </div>
-                            <p className="text-center font-semibold">Modern Chair</p>
-                        </div>
+                        <ProductItem key={`product-${index}`} />
                     ))}
                 </div>
             </div>
