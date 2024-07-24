@@ -50,7 +50,9 @@ export default function CenterContentsBanner({ title, description }: Props) {
                         Our <br />
                         {title}
                     </h2>
-                    <p className="text-lg font-medium text-white lg:text-xl">{description}</p>
+                    <p className="text-center text-lg font-medium text-white lg:text-xl">
+                        {description}
+                    </p>
                 </div>
             </div>
 

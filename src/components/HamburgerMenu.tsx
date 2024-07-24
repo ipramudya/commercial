@@ -4,6 +4,7 @@ import { CompatLogo } from "@/assets/images";
 import { cn } from "@/functions/cn";
 import { LinksData } from "@/static/links";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { MenuIcon } from "./Icon";
 
@@ -30,7 +31,9 @@ export function HamburgerMenu() {
                     <ul className="flex w-full flex-grow flex-col items-center justify-center space-y-8">
                         {LinksData.map((link) => (
                             <li key={`link-${link.id}`} className="text-lg text-neutral-700">
-                                {link.name}
+                                <Link prefetch href={link.path} onClick={() => setActive(false)}>
+                                    {link.name}
+                                </Link>
                             </li>
                         ))}
                     </ul>
