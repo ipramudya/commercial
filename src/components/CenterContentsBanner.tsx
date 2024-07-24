@@ -15,7 +15,7 @@ export default function CenterContentsBanner({ title, description }: Props) {
 
     return (
         <div className="relative h-[calc(80dvh-100px)] w-full overflow-hidden lg:h-[calc(100dvh-120px)]">
-            <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/30" />
+            <div className="absolute left-0 top-0 z-[9] h-full w-full bg-black/30" />
 
             <div className="z-[1] h-full" ref={emblaRef}>
                 <div className="flex h-full">
