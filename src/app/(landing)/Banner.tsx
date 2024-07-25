@@ -1,9 +1,7 @@
 "use client";
 
 import { ChevLeftIcon, ChevRightIcon } from "@/components/Icon";
-import { CarouselImages } from "@/static/carousels";
 import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
 
 export default function Banner() {
     const [emblaRef, emblaAPI] = useEmblaCarousel();
@@ -14,18 +12,19 @@ export default function Banner() {
 
             <div className="z-[1] h-full" ref={emblaRef}>
                 <div className="flex h-full">
-                    {CarouselImages.map((image) => (
-                        <div
-                            key={`carousel-image-${image.id}`}
-                            className="min-w-0 flex-shrink-0 flex-grow-0 basis-full"
+                    <div className="min-w-0 flex-shrink-0 flex-grow-0 basis-full">
+                        <video
+                            preload="none"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            crossOrigin="anonymous"
+                            className="h-full w-full object-cover"
                         >
-                            <Image
-                                src={image.src}
-                                alt="hero-banner"
-                                className="h-full w-full object-cover"
-                            />
-                        </div>
-                    ))}
+                            <source src="/videos/WEEN_INDOKRAFT.mp4" type="video/mp4" />
+                        </video>
+                    </div>
                 </div>
             </div>
 
