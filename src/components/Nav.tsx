@@ -18,10 +18,13 @@ export default function Nav() {
                 </div>
 
                 {/* display -- desktop */}
-                <ul className="hidden items-center space-x-[3rem] lg:flex">
+                <ul className="hidden items-center space-x-2 lg:flex">
                     {LinksData.map((link) => (
-                        <li key={`link-${link.id}`} className="text-neutral-700">
-                            <Link prefetch href={link.path}>
+                        <li
+                            key={`link-${link.id}`}
+                            className="flex items-center justify-center rounded-full px-4 py-2 text-neutral-700 hover:bg-neutral-100"
+                        >
+                            <Link prefetch href={link.path} className="mt-1">
                                 {link.name}
                             </Link>
                         </li>
