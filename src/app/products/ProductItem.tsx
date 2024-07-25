@@ -1,7 +1,7 @@
 "use client";
 
+import ProductPopup from "@/app/products/ProductPopup";
 import { CustomImg } from "@/assets/images";
-import ProductPopup from "@/components/ProductPopup";
 import Image from "next/image";
 import { useCallback, useState } from "react";
 

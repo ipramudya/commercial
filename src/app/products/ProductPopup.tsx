@@ -1,7 +1,8 @@
 import { CustomImg, WhatsappIconImg } from "@/assets/images";
+import { CloseIcon } from "@/components/Icon";
 import * as Dialog from "@radix-ui/react-dialog";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import Image from "next/image";
-import { CloseIcon } from "./Icon";
 
 interface Props {
     open: boolean;
@@ -12,8 +13,14 @@ export default function ProductPopup({ open, onOpenChange }: Props) {
     return (
         <Dialog.Root open={open} onOpenChange={onOpenChange}>
             <Dialog.Portal>
-                <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 bg-black/40" />
-                <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-1/2 top-1/2 w-[95vw] max-w-[600px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 shadow-md focus:outline-none lg:max-w-[900px]">
+                <Dialog.Overlay className="fixed inset-0 z-40 bg-black/40 data-[state=open]:animate-overlayShow" />
+                <Dialog.Content className="fixed left-1/2 top-1/2 z-50 w-[95vw] max-w-[600px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 shadow-md focus:outline-none data-[state=open]:animate-contentShow lg:max-w-[900px]">
+                    <VisuallyHidden.Root>
+                        <Dialog.Title>
+                            <h3>Product Detail</h3>
+                        </Dialog.Title>
+                    </VisuallyHidden.Root>
+
                     {/* contents */}
                     <section className="relative grid grid-cols-1 lg:grid-cols-2">
                         {/* left */}
