@@ -1,4 +1,5 @@
 import { MaterialIconImg } from "@/assets/images";
+import { MaterialsContents } from "@/static/contents";
 import Image from "next/image";
 
 export default function Materials() {
@@ -27,16 +28,16 @@ export default function Materials() {
 
             <div className="mt-[3rem] xl:flex xl:items-center xl:justify-center">
                 <div className="grid grid-cols-2 gap-6 md:grid-cols-3 xl:w-full xl:max-w-screen-xl">
-                    {Array.from({ length: 5 }).map((_, index) => (
+                    {MaterialsContents.map((mat) => (
                         <div
-                            key={`material-${index}`}
-                            className="relative aspect-square w-full rounded-2xl border border-transparent bg-white transition-all duration-300 hover:border-sky-400"
+                            key={`material-${mat.id}`}
+                            className="relative aspect-square w-full overflow-hidden rounded-2xl border border-transparent transition-all duration-300 hover:border-sky-400"
                         >
-                            <div className="absolute bottom-4 left-4">
-                                <p className="font-semibold text-neutral-700">
-                                    Material {index + 1}
-                                </p>
-                            </div>
+                            <Image
+                                src={mat.src}
+                                alt="material"
+                                className="h-full w-full object-cover"
+                            />
                         </div>
                     ))}
                 </div>

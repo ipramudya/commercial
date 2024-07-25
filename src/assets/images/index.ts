@@ -19,3 +19,17 @@ export { default as SupplyImg } from "./supply.png";
 export { default as OfficeIconImg } from "./office.png";
 export { default as WhatsappIconImg } from "./wa.png";
 export { default as WorkshopIconImg } from "./workshop.png";
+
+export { default as MaterialOneImg } from "./m-1_hpl.jpg";
+export { default as MaterialTwoImg } from "./m-2_triplek.jpg";
+export { default as MaterialThreeImg } from "./m-3_stainless_gold_mirror.jpg";
+export { default as MaterialFourImg } from "./m-4_stainless_black_mirror.jpg";
+export { default as MaterialFiveImg } from "./m-5_glass door.jpg";
+
+export { default as WorksOneImg } from "./works_1.jpg";
+export { default as WorksTwoImg } from "./works_2.jpg";
+export { default as WorksThreeImg } from "./works_3.jpg";
+export { default as WorksFourImg } from "./works_4.jpg";
+export { default as WorksFiveImg } from "./works_5.jpg";
+export { default as WorksSixImg } from "./works_6.jpg";
+export { default as WorksSevenImg } from "./works_7.jpg";

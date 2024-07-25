@@ -1,7 +1,7 @@
 "use client";
 
 import { WorksIconImg } from "@/assets/images";
-import { cn } from "@/functions/cn";
+import { WorksContents } from "@/static/contents";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,18 +30,24 @@ export default function Works() {
             <div className="relative mt-[3rem]">
                 <div ref={emblaRef} className="overflow-hidden">
                     <div className="flex">
-                        {Array.from({ length: 8 }).map((_, index) => (
+                        {WorksContents.map((work) => (
                             <div
-                                key={"works-" + index}
-                                className={cn(
-                                    "group relative flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 lg:basis-1/4",
-                                    index % 2 === 0 ? "bg-neutral-300" : "bg-neutral-200",
-                                )}
+                                key={"works-" + work.id}
+                                className={
+                                    "group relative flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 lg:basis-1/4"
+                                }
                             >
                                 {/* overlay - show on hover */}
                                 <div className="absolute inset-0 h-full w-full bg-black/20 opacity-0 duration-300 group-hover:opacity-100" />
 
-                                <div className="h-[500px] lg:h-[700px]" />
+                                <div className="h-[500px] lg:h-[700px]">
+                                    <Image
+                                        src={work.src}
+                                        alt="works"
+                                        className="h-full w-full object-cover"
+                                        quality={100}
+                                    />
+                                </div>
                             </div>
                         ))}
                     </div>
