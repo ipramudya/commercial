@@ -1,8 +1,9 @@
-import { CustomImg, WhatsappIconImg } from "@/assets/images";
+import { WhatsappIconImg } from "@/assets/images";
 import { CloseIcon } from "@/components/Icon";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import Image from "next/image";
+import ProductPopupCarousel from "./ProductPopupCarousel";
 
 interface Props {
     open: boolean;
@@ -17,18 +18,14 @@ export default function ProductPopup({ open, onOpenChange }: Props) {
                 <Dialog.Content className="fixed left-1/2 top-1/2 z-50 w-[95vw] max-w-[600px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 shadow-md focus:outline-none data-[state=open]:animate-contentShow lg:max-w-[900px]">
                     <VisuallyHidden.Root>
                         <Dialog.Title>
-                            <h3>Product Detail</h3>
+                            <p>Product Detail</p>
                         </Dialog.Title>
                     </VisuallyHidden.Root>
 
                     {/* contents */}
                     <section className="relative grid grid-cols-1 lg:grid-cols-2">
                         {/* left */}
-                        <div className="flex items-center justify-center bg-neutral-100 py-[3rem] lg:py-0">
-                            <div className="relative w-full max-w-[200px] overflow-hidden">
-                                <Image src={CustomImg} className="h-auto w-full" alt="product" />
-                            </div>
-                        </div>
+                        <ProductPopupCarousel />
 
                         {/* right */}
                         <div className="flex flex-col space-y-6 bg-white px-6 py-[3rem] lg:relative">
@@ -38,7 +35,7 @@ export default function ProductPopup({ open, onOpenChange }: Props) {
                                     className="group flex size-8 items-center justify-center rounded-md bg-white"
                                     onClick={() => onOpenChange(false)}
                                 >
-                                    <CloseIcon className="transition-all duration-300 group-hover:stroke-red-500" />
+                                    <CloseIcon className="stroke-neutral-400 transition-all duration-300 group-hover:stroke-red-500" />
                                 </button>
                             </div>
 
