@@ -4,6 +4,7 @@ import { WorksIconImg } from "@/assets/images";
 import { cn } from "@/functions/cn";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Works() {
     const [emblaRef] = useEmblaCarousel({
@@ -33,10 +34,13 @@ export default function Works() {
                             <div
                                 key={"works-" + index}
                                 className={cn(
-                                    "flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 lg:basis-1/4",
+                                    "group relative flex-shrink-0 flex-grow-0 basis-1/2 md:basis-1/3 lg:basis-1/4",
                                     index % 2 === 0 ? "bg-neutral-300" : "bg-neutral-200",
                                 )}
                             >
+                                {/* overlay - show on hover */}
+                                <div className="absolute inset-0 h-full w-full bg-black/20 opacity-0 duration-300 group-hover:opacity-100" />
+
                                 <div className="h-[500px] lg:h-[700px]" />
                             </div>
                         ))}
@@ -44,9 +48,14 @@ export default function Works() {
                 </div>
 
                 <div className="absolute bottom-[-20px] right-[2%] md:right-[4%]">
-                    <button className="min-h-[2.5rem] rounded-full bg-neutral-400 px-4">
-                        <span className="font-medium text-white">Lihat lainnya</span>
-                    </button>
+                    <Link
+                        href="works"
+                        className="flex min-h-[2.5rem] items-center justify-center rounded-full bg-neutral-400 px-4 transition-all duration-300 hover:bg-neutral-500"
+                    >
+                        <span className="mt-1 block h-fit font-medium text-white">
+                            Lihat lainnya
+                        </span>
+                    </Link>
                 </div>
             </div>
         </section>
