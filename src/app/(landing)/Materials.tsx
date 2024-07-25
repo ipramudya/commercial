@@ -30,7 +30,7 @@ export default function Materials() {
                     {Array.from({ length: 5 }).map((_, index) => (
                         <div
                             key={`material-${index}`}
-                            className="relative aspect-square w-full rounded-2xl bg-white"
+                            className="relative aspect-square w-full rounded-2xl border border-transparent bg-white transition-all duration-300 hover:border-sky-400"
                         >
                             <div className="absolute bottom-4 left-4">
                                 <p className="font-semibold text-neutral-700">
