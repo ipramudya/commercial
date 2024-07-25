@@ -10,7 +10,7 @@ export default function Banner() {
         <div className="relative flex h-[calc(80dvh-100px)] w-full items-center justify-center overflow-hidden lg:h-[calc(100dvh-120px)]">
             <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/30" />
 
-            <div className="z-[1] h-full" ref={emblaRef}>
+            <div className="z-[1] h-full w-full" ref={emblaRef}>
                 <div className="flex h-full">
                     <div className="min-w-0 flex-shrink-0 flex-grow-0 basis-full">
                         <video
@@ -22,7 +22,10 @@ export default function Banner() {
                             crossOrigin="anonymous"
                             className="h-full w-full object-cover"
                         >
-                            <source src="/videos/WEEN_INDOKRAFT.mp4" type="video/mp4" />
+                            <source
+                                src="https://res.cloudinary.com/dn4pc5cov/video/upload/v1721923570/app/jzmfosqkuf7kjigwh0s0.mp4"
+                                type="video/mp4"
+                            />
                         </video>
                     </div>
                 </div>
