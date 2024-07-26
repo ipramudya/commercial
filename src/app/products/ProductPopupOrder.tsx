@@ -12,7 +12,7 @@ export default function ProductPopupOrder() {
             <div className="flex h-[40px] min-w-[40px] items-center justify-center overflow-hidden rounded-md border border-neutral-200 p-2">
                 <input
                     type="number"
-                    min={0}
+                    min={1}
                     value={quantity}
                     onChange={(e) => setQuantity(Number(e.target.value))}
                     className="h-full max-w-[40px] outline-none"
