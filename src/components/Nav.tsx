@@ -1,4 +1,4 @@
-import { PatternImg, WideLogo } from "@/assets/images";
+import { WideLogo } from "@/assets/images";
 import { LinksData } from "@/static/links";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,18 +33,6 @@ export default function Nav() {
 
                 {/* display -- mobile */}
                 <HamburgerMenu />
-
-                {/* display -- hide on mobile */}
-                <div className="absolute right-0 top-0 z-10 hidden lg:block">
-                    <div className="w-[200px]">
-                        <Image
-                            src={PatternImg}
-                            alt="pattern"
-                            className="h-auto w-full"
-                            quality={100}
-                        />
-                    </div>
-                </div>
             </div>
         </nav>
     );
