@@ -26,11 +26,11 @@ export const WhatsappTeks = "+62819 1888 1686";
 export const WhatsappNumTeks = "6281918881686";
 
 export const MaterialsContents = [
-    { id: 1, src: MaterialOneImg },
-    { id: 2, src: MaterialTwoImg },
-    { id: 3, src: MaterialThreeImg },
-    { id: 4, src: MaterialFourImg },
-    { id: 5, src: MaterialFiveImg },
+    { id: 1, src: MaterialOneImg, name: "HPL" },
+    { id: 2, src: MaterialTwoImg, name: "Triplek" },
+    { id: 3, src: MaterialThreeImg, name: "Stainless Gold Mirror" },
+    { id: 4, src: MaterialFourImg, name: "Stainless Black Mirror" },
+    { id: 5, src: MaterialFiveImg, name: "Glass Door" },
 ];
 
 export const WorksContents = [

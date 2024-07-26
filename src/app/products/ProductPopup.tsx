@@ -44,7 +44,7 @@ export default function ProductPopup({ open, onOpenChange }: Props) {
                                     <h4 className="text-xl font-bold uppercase">arita silver</h4>
                                     <p className="uppercase tracking-wider">free cup</p>
                                 </div>
-                                <h4 className="text-3xl font-medium text-emerald-600">$20</h4>
+                                <h4 className="text-3xl font-medium text-emerald-600">Rp 20</h4>
                             </div>
 
                             {/* desc */}

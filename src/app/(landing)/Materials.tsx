@@ -31,8 +31,14 @@ export default function Materials() {
                     {MaterialsContents.map((mat) => (
                         <div
                             key={`material-${mat.id}`}
-                            className="relative aspect-square w-full overflow-hidden rounded-2xl border border-transparent transition-all duration-300 hover:border-sky-400"
+                            className="relative aspect-square w-full overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-300 hover:border-sky-500"
                         >
+                            <div className="absolute left-0 top-0 z-[9] h-full w-full bg-black/30" />
+                            <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+                                <p className="text-center text-2xl font-bold text-white">
+                                    {mat.name}
+                                </p>
+                            </div>
                             <Image
                                 src={mat.src}
                                 alt="material"
