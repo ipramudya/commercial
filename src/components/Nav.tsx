@@ -1,4 +1,4 @@
-import { WideLogo } from "@/assets/images";
+import { PatternImg, WideLogo } from "@/assets/images";
 import { LinksData } from "@/static/links";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,7 @@ import { HamburgerMenu } from "./HamburgerMenu";
 
 export default function Nav() {
     return (
-        <nav className="flex items-center justify-center bg-white px-6">
+        <nav className="relative flex items-center justify-center overflow-hidden bg-white px-6">
             <div className="flex h-[100px] w-full max-w-screen-lg items-center justify-between border-b lg:h-[120px] xl:max-w-screen-xl">
                 <div className="relative w-[160px] lg:w-[220px]">
                     <Image
@@ -18,7 +18,7 @@ export default function Nav() {
                 </div>
 
                 {/* display -- desktop */}
-                <ul className="hidden items-center space-x-2 lg:flex">
+                <ul className="relative z-20 hidden items-center space-x-2 lg:flex">
                     {LinksData.map((link) => (
                         <li
                             key={`link-${link.id}`}
@@ -33,6 +33,18 @@ export default function Nav() {
 
                 {/* display -- mobile */}
                 <HamburgerMenu />
+
+                {/* display -- hide on mobile */}
+                <div className="absolute right-0 top-0 z-10 hidden lg:block">
+                    <div className="w-[200px]">
+                        <Image
+                            src={PatternImg}
+                            alt="pattern"
+                            className="h-auto w-full"
+                            quality={100}
+                        />
+                    </div>
+                </div>
             </div>
         </nav>
     );
