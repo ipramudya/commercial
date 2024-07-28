@@ -1,4 +1,4 @@
-import { Hero2, WideLogo } from "@/assets/images";
+import { AboutImg, WideLogo } from "@/assets/images";
 import { WeenIndokraftMeaningTeks, WeenIndokraftTeks } from "@/static/contents";
 import Image from "next/image";
 
@@ -22,9 +22,9 @@ export default function About() {
                 </div>
 
                 <div className="flex items-center justify-center">
-                    <div className="flex h-full w-full items-center justify-center lg:max-w-[480px]">
+                    <div className="flex h-full w-full items-center justify-center lg:max-w-[500px]">
                         <Image
-                            src={Hero2}
+                            src={AboutImg}
                             alt="ween-indokraft-about-pic"
                             className="h-auto w-full"
                             quality={100}

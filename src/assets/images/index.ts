@@ -33,3 +33,5 @@ export { default as WorksFourImg } from "./works_4.jpg";
 export { default as WorksFiveImg } from "./works_5.jpg";
 export { default as WorksSixImg } from "./works_6.jpg";
 export { default as WorksSevenImg } from "./works_7.jpg";
+
+export { default as AboutImg } from "./main-pic1.png";
