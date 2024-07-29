@@ -1,4 +1,5 @@
 import { WorksIconImg } from "@/assets/images";
+import { WorksContents } from "@/static/contents";
 import Image from "next/image";
 
 export default function OurWorks() {
@@ -21,9 +22,15 @@ export default function OurWorks() {
 
             <div className="mt-[3rem] xl:flex xl:items-center xl:justify-center">
                 <div className="grid grid-cols-2 gap-6 md:grid-cols-3 xl:w-full xl:max-w-screen-xl">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <div key={`material-${index}`} className="flex flex-col space-y-3">
-                            <div className="aspect-square w-full rounded-2xl bg-neutral-100" />
+                    {WorksContents.map((work) => (
+                        <div key={`material-${work.id}`} className="flex flex-col space-y-3">
+                            <div className="aspect-square w-full overflow-hidden rounded-2xl bg-neutral-100">
+                                <Image
+                                    src={work.src}
+                                    alt="work"
+                                    className="h-full w-full object-cover"
+                                />
+                            </div>
                             <p className="text-center font-semibold">
                                 Pengerjaan Workingspace <br /> Rumah Pondok Indah
                             </p>

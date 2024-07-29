@@ -1,16 +1,9 @@
-"use client";
-
 import { WorksIconImg } from "@/assets/images";
 import { WorksContents } from "@/static/contents";
-import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Works() {
-    const [emblaRef] = useEmblaCarousel({
-        dragFree: true,
-    });
-
     return (
         <section className="relative flex flex-col bg-neutral-100 pt-[3rem] xl:pt-[6rem]">
             <div className="flex items-center justify-center space-x-1">
@@ -28,9 +21,9 @@ export default function Works() {
             </div>
 
             <div className="relative mt-[3rem]">
-                <div ref={emblaRef} className="overflow-hidden">
+                <div className="overflow-hidden">
                     <div className="flex">
-                        {WorksContents.map((work) => (
+                        {WorksContents.filter((_, index) => index < 4).map((work) => (
                             <div
                                 key={"works-" + work.id}
                                 className={
