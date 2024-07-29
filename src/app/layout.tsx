@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Font from "@/assets/fonts";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import WhatsappButton from "@/components/WhatsappButton";
 import { PropsWithChildren } from "react";
 import "./globals.css";
 
@@ -19,6 +20,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
                     <Nav />
                     {children}
                     <Footer />
+
+                    <WhatsappButton />
                 </main>
             </body>
         </html>
