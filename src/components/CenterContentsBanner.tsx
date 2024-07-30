@@ -1,17 +1,25 @@
 "use client";
 
 import { ChevLeftIcon, ChevRightIcon } from "@/components/Icon";
-import { CarouselImages } from "@/static/carousels";
 import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 interface Props {
     title: string;
     description: string;
     disabled?: boolean;
+    data: {
+        id: number;
+        src: StaticImageData;
+    }[];
 }
 
-export default function CenterContentsBanner({ title, description, disabled = false }: Props) {
+export default function CenterContentsBanner({
+    title,
+    description,
+    data,
+    disabled = false,
+}: Props) {
     const [emblaRef, emblaAPI] = useEmblaCarousel({ active: !disabled });
 
     return (
@@ -20,7 +28,7 @@ export default function CenterContentsBanner({ title, description, disabled = fa
 
             <div className="z-[1] h-full" ref={emblaRef}>
                 <div className="flex h-full">
-                    {CarouselImages.map((image) => (
+                    {data.map((image) => (
                         <div
                             key={`carousel-image-${image.id}`}
                             className="flex-shrink-0 flex-grow-0 basis-full"

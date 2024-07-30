@@ -1,11 +1,23 @@
 "use client";
 
 import ProductPopup from "@/app/products/ProductPopup";
-import { CustomImg } from "@/assets/images";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useCallback, useState } from "react";
 
-export default function ProductItem() {
+interface Props {
+    previewSrc: StaticImageData;
+    name: string;
+    subName: string;
+    sku: string;
+    category: string;
+    description: string;
+    images: {
+        id: number;
+        src: StaticImageData;
+    }[];
+}
+
+export default function ProductItem(data: Props) {
     const [open, setOpen] = useState(false);
 
     const onOpenChange = useCallback((open: boolean) => {
@@ -14,7 +26,7 @@ export default function ProductItem() {
 
     return (
         <>
-            <ProductPopup open={open} onOpenChange={onOpenChange} />
+            <ProductPopup data={data} open={open} onOpenChange={onOpenChange} />
 
             <div
                 className="flex cursor-pointer flex-col space-y-3"
@@ -23,12 +35,12 @@ export default function ProductItem() {
             >
                 <div className="aspect-square w-full overflow-hidden rounded-2xl">
                     <Image
-                        src={CustomImg}
+                        src={data.previewSrc}
                         alt="products"
                         className="h-auto w-full transition-all duration-300 hover:scale-105"
                     />
                 </div>
-                <p className="text-center font-semibold">Modern Chair</p>
+                <p className="text-center font-semibold">{data.name}</p>
             </div>
         </>
     );
