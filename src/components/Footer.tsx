@@ -1,5 +1,5 @@
 import { CompatLogo } from "@/assets/images";
-import { OfficeTeks, WorkshopTeks } from "@/static/contents";
+import { OfficeTeks1, OfficeTeks2, WorkshopTeks } from "@/static/contents";
 import Image from "next/image";
 
 export default function Footer() {
@@ -16,14 +16,18 @@ export default function Footer() {
                         />
                     </div>
 
-                    <div className="flex items-center space-x-6">
-                        <div className="flex flex-col space-y-2">
-                            <p className="text-sm font-semibold text-[#2D2324]">Office</p>
-                            <p className="max-w-[300px] text-sm text-[#2D2324]">{OfficeTeks}</p>
+                    <div className="flex flex-col items-center gap-6 sm:flex-row">
+                        <div className="flex w-full flex-col space-y-2 sm:max-w-[300px]">
+                            <p className="text-sm font-semibold text-[#2D2324]">Office 1</p>
+                            <p className="text-sm text-[#2D2324]">{OfficeTeks1}</p>
                         </div>
-                        <div className="flex flex-col space-y-2">
+                        <div className="flex w-full flex-col space-y-2 sm:max-w-[300px]">
+                            <p className="text-sm font-semibold text-[#2D2324]">Office 2</p>
+                            <p className="text-sm text-[#2D2324]">{OfficeTeks2}</p>
+                        </div>
+                        <div className="flex w-full flex-col space-y-2 sm:max-w-[300px]">
                             <p className="text-sm font-semibold text-[#2D2324]">Workshop</p>
-                            <p className="max-w-[300px] text-sm text-[#2D2324]">{WorkshopTeks}</p>
+                            <p className="text-sm text-[#2D2324]">{WorkshopTeks}</p>
                         </div>
                     </div>
                 </section>

@@ -10,7 +10,10 @@ export default function Maps() {
 
                 <div className="flex items-center space-x-3">
                     <div className="rounded-md bg-neutral-100 px-3 py-3">
-                        <p className="font-semibold">Office</p>
+                        <p className="font-semibold">Office 1</p>
+                    </div>
+                    <div className="rounded-md bg-neutral-100 px-3 py-3">
+                        <p className="font-semibold">Office 2</p>
                     </div>
                     <div className="rounded-md bg-neutral-100 px-3 py-3">
                         <p className="font-semibold">Workshop</p>

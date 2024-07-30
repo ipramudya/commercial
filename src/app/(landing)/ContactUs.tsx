@@ -1,7 +1,13 @@
 "use client";
 
 import { OfficeIconImg, WhatsappIconImg, WorkshopIconImg } from "@/assets/images";
-import { OfficeTeks, WhatsappNumTeks, WhatsappTeks, WorkshopTeks } from "@/static/contents";
+import {
+    OfficeTeks1,
+    OfficeTeks2,
+    WhatsappNumTeks,
+    WhatsappTeks,
+    WorkshopTeks,
+} from "@/static/contents";
 import Image from "next/image";
 import ContactUsForm from "./ContactUsForm";
 
@@ -16,7 +22,7 @@ export default function ContactUs() {
                 <span className="font-bold">Contact</span> Us
             </p>
 
-            <div className="flex flex-col items-center md:flex-row md:items-end md:justify-between md:gap-[6rem] lg:w-full lg:max-w-screen-lg">
+            <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-[6rem] lg:w-full lg:max-w-screen-lg">
                 <ContactUsForm />
                 <div className="mt-[3rem] w-full max-w-[500px] lg:max-w-[650px]">
                     <div className="flex flex-col space-y-6">
@@ -30,11 +36,29 @@ export default function ContactUs() {
                                         quality={100}
                                     />
                                 </div>
-                                <p className="text-sm font-semibold">Office</p>
+                                <p className="text-sm font-semibold">Office 1</p>
                             </div>
 
                             <div className="flex min-h-[42px] items-center justify-center rounded-3xl bg-neutral-100 p-6">
-                                <p className="text-sm leading-normal">{OfficeTeks}</p>
+                                <p className="text-sm leading-normal">{OfficeTeks1}</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col space-y-3">
+                            <div className="flex items-center space-x-2">
+                                <div className="relative size-7">
+                                    <Image
+                                        src={OfficeIconImg}
+                                        alt="office-icon"
+                                        className="h-auto w-full"
+                                        quality={100}
+                                    />
+                                </div>
+                                <p className="text-sm font-semibold">Office 2</p>
+                            </div>
+
+                            <div className="flex min-h-[42px] items-center justify-center rounded-3xl bg-neutral-100 p-6">
+                                <p className="text-sm leading-normal">{OfficeTeks2}</p>
                             </div>
                         </div>
 
