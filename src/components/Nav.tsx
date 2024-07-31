@@ -15,8 +15,8 @@ export default function Nav() {
     return (
         <nav
             className={cn(
-                "relative flex items-center justify-center overflow-hidden px-6",
-                isContactPage ? "bg-neutral-100" : "bg-white",
+                "relative flex items-center justify-center overflow-hidden bg-white px-6",
+                isContactPage && "border-b border-neutral-100",
             )}
         >
             <div
