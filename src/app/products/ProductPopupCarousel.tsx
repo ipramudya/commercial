@@ -18,7 +18,7 @@ export default function ProductPopupCarousel({ images }: Props) {
         <div className="relative flex items-center justify-center bg-neutral-100 py-[3rem] lg:py-0">
             <button
                 type="button"
-                className="absolute left-2 top-1/2 z-50 -translate-y-1/2 md:left-[2%]"
+                className="absolute left-2 top-1/2 z-50 flex size-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-white md:left-[2%]"
                 onClick={() => {
                     if (emblaAPI) emblaAPI.scrollPrev();
                 }}
@@ -30,7 +30,7 @@ export default function ProductPopupCarousel({ images }: Props) {
                 <div className="flex">
                     {images.map((image) => (
                         <div key={`product-${image.id}`} className="shrink-0 grow-0 basis-full">
-                            <div className="relative mx-auto w-full max-w-[250px] overflow-hidden rounded-xl">
+                            <div className="relative mx-auto h-full w-full overflow-hidden rounded-xl">
                                 <Image src={image.src} className="h-auto w-full" alt="product" />
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function ProductPopupCarousel({ images }: Props) {
 
             <button
                 type="button"
-                className="absolute right-2 top-1/2 z-50 -translate-y-1/2 md:right-[2%]"
+                className="absolute right-2 top-1/2 z-50 flex size-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-white md:right-[2%]"
                 onClick={() => {
                     if (emblaAPI) emblaAPI.scrollNext();
                 }}
