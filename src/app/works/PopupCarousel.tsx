@@ -30,7 +30,7 @@ export default function PopupCarousel({ images, onOpenChange, open }: Props) {
                         </Dialog.Title>
                     </VisuallyHidden.Root>
 
-                    <section className="xl:h-[80dvh]] relative aspect-[16/9] w-[95dvw] overflow-hidden bg-neutral-100">
+                    <section className="relative aspect-[16/9] w-[95dvw] overflow-hidden bg-neutral-100 xl:h-[95vh] xl:w-auto">
                         <button
                             type="button"
                             className="absolute right-[1.5rem] top-[1.5rem] z-50 flex size-[32px] items-center justify-center rounded-full bg-white"
