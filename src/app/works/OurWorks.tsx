@@ -44,9 +44,6 @@ export default function OurWorks() {
                                         className="h-full w-full object-cover"
                                     />
                                 </div>
-                                <p className="text-center font-semibold">
-                                    Pengerjaan Workingspace <br /> Rumah Pondok Indah
-                                </p>
                             </div>
                         ))}
                     </div>
