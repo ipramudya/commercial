@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start -p 8080",
-        "lint": "next lint"
+        "lint": "next lint",
+        "start:manual": "NODE_ENV=production node ./server.js"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.1",
