@@ -31,9 +31,19 @@ export function HamburgerMenu() {
                     <ul className="flex w-full flex-grow flex-col items-center justify-center space-y-8">
                         {LinksData.map((link) => (
                             <li key={`link-${link.id}`} className="text-lg text-neutral-700">
-                                <Link prefetch href={link.path} onClick={() => setActive(false)}>
-                                    {link.name}
-                                </Link>
+                                {link.download ? (
+                                    <a href={link.download} download>
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        prefetch
+                                        href={link.path}
+                                        onClick={() => setActive(false)}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
