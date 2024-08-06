@@ -46,7 +46,7 @@ export const WhatsappNumTeks = "6281918881686";
 
 export const MaterialsContents = [
     { id: 1, src: MaterialOneImg, name: "HPL" },
-    { id: 2, src: MaterialTwoImg, name: "Triplek" },
+    { id: 2, src: MaterialTwoImg, name: "Multiplek" },
     { id: 3, src: MaterialThreeImg, name: "Stainless Gold Mirror" },
     { id: 4, src: MaterialFourImg, name: "Stainless Black Mirror" },
     { id: 5, src: MaterialFiveImg, name: "Glass Door" },
