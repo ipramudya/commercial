@@ -43,9 +43,20 @@ export default function Nav() {
                                 isContactPage ? "hover:bg-white" : "hover:bg-neutral-100",
                             )}
                         >
-                            <Link prefetch href={link.path} className="mt-1">
-                                {link.name}
-                            </Link>
+                            {link.id === 4 ? (
+                                <a
+                                    href={link.path}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="mt-1"
+                                >
+                                    {link.name}
+                                </a>
+                            ) : (
+                                <Link prefetch href={link.path} className="mt-1">
+                                    {link.name}
+                                </Link>
+                            )}
                         </li>
                     ))}
                 </ul>
