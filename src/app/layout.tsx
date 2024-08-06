@@ -8,13 +8,14 @@ import { PropsWithChildren } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Commercial App",
-    description: "description of commercial app",
+    title: "Ween Indokraft",
+    description:
+        "Perusahaan supplier furnitur berpengalaman dalam menyediakan berbagai jenis produk termasuk meja, kursi, lemari, dll.",
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
     return (
-        <html lang="en" className={Font.className}>
+        <html lang="id" className={Font.className}>
             <body>
                 <main className="flex w-full flex-col">
                     <Nav />

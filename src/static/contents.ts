@@ -35,9 +35,9 @@ export const WeenIndokraftTeks = "Ween Indokraft";
 export const WeenIndokraftMeaningTeks =
     "adalah perusahaan supplier furnitur yang telah berdiri sejak tahun 2024. Perusahaan ini telah berpengalaman dalam menyediakan berbagai jenis produk furnitur, termasuk meja, kursi, lemari, dan furnitur lainnya, kepada pelanggan atau bisnis. Dengan reputasi yang terjamin, Ween Indokraftt menawarkan kualitas yang terjamin, harga yang bersaing, dan kemudahan dalam penyediaan furnitur.";
 export const SupplyTeks =
-    "Ween Indokraft adalah perusahaan supplier furnitur yang telah berdiri sejak tahun 2024. Perusahaan ini telah berpengalaman dalam menyediakan berbagai jenis produk furnitur.";
+    "Ween indokraft bersedia melakukan penyediaan atau penyaluran furnitur kepada pelanggan atau pengguna. Dalam konteks bisnis, mensupply furnitur melibatkan perusahaan atau individu yang menyediakan berbagai jenis furnitur, seperti meja, kursi, lemari, dan lain-lain, untuk memenuhi kebutuhan konsumen";
 export const CustomTeks =
-    "Ween Indokraft adalah perusahaan supplier furnitur yang telah berdiri sejak tahun 2024. Perusahaan ini telah berpengalaman dalam menyediakan berbagai jenis produk furnitur.";
+    "Ween indokraft dapat melakukan kustom furnitur atau barang yang dibuat sesuai dengan pesanan atau kebutuhan individu. Dalam konteks ini, kustom furniture dibuat dengan model dan ukuran yang disesuaikan untuk memenuhi kebutuhan khusus dari pelanggan.";
 export const OfficeTeks1 = "Jl. Bintaro Raya nomor 8C Kebayoran Lama, Jakarta Selatan DKI Jakarta";
 export const OfficeTeks2 = "Ruko Shibuya Blok E no.9 PIK 2, Jakarta";
 export const WorkshopTeks = "Jl. Kapuk Pulo Raya Kav.115 Jakarta Barat, DKI Jakarta";
